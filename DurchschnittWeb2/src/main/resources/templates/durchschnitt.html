@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<form action="/durchschnitt">
+    <label for="fname">Note:</label><br>
+    <input type="text" id="fname" name="noteInput" value="2"><br>
+
+    <input type="submit" value="Submit">
+</form>
+
+<h1 th:text="${dds}"/>
+
+<h1 th:text="${gutGemacht}"/>
+</body>
+</html>

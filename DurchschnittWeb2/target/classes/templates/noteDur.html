@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Durchschnittrechner</title>
+</head>
+<body>
+<h1 th:text="${user}"/>
+
+<form action="/durchschnitt">
+    <input type="text"  name="fach"      id="fach" placeholder="Fach" required="required">
+    <input type="text"  name="noteInput" id="noteInput" placeholder="Note" required="required"><br>
+
+    <input type="submit" value="Berechne">
+</form>
+
+
+<h1 th:text="${test}"/>
+<h1 th:text="${gutGemacht}"/>
+
+
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrieren</title>
+</head>
+<body>
+
+<h1>New Account</h1>
+
+<form th:action="@{/register/createuser}" method="post">
+
+    <input type="text" placeholder="Username" name="username" required="required">
+    <input type="password" placeholder="Password" name="password" required="required">
+    <input type="password" placeholder="Repeat Password" name="passwordRepeated" required="required">
+
+    <input type="submit" value="Okeeee Lets Go">
+</form>
+
+<h3 th:text=${z} style="color: red;">  </h3 >
+
+
+
+</body>
+</html>
